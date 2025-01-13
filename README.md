@@ -63,9 +63,9 @@ python manage.py runserver
 - POST `/api/api/employees/{id}/verify/` - Verify employee
 
 ### Documentation
-- Swagger UI: `/swagger/`
-- ReDoc: `/redoc/`
-- Admin Interface: `/admin/`
+- Swagger UI: `http://127.0.0.1:8000/swagger/`
+- ReDoc: `http://127.0.0.1:8000/redoc/`
+- Admin Interface: `http://127.0.0.1:8000/admin/`
 
 ## API Usage Examples
 
