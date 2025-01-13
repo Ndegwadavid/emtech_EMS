@@ -1,0 +1,54 @@
+<!-- templates/admin/index.html -->
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="custom-admin-header" style="background-color: #f8f9fa; padding: 20px; margin-bottom: 20px; border-radius: 5px;">
+    <h1 style="color: #2c3e50; margin-bottom: 15px;">Employee Management System</h1>
+    <p style="color: #34495e;">Welcome to the Employee Management System. Here you can manage employees and their information.</p>
+</div>
+
+<div class="quick-actions" style="margin-bottom: 20px;">
+    <a href="{% url 'admin:employees_employee_add' %}" class="button" 
+       style="background-color: #28a745; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
+        Add New Employee
+    </a>
+    <a href="{% url 'admin:employees_employee_changelist' %}?status__exact=PENDING" class="button"
+       style="background-color: #ffc107; color: black; padding: 10px 15px; border-radius: 5px; text-decoration: none; margin-right: 10px;">
+        View Pending Employees
+    </a>
+    <a href="{% url 'admin:employees_employee_changelist' %}?status__exact=VERIFIED" class="button"
+       style="background-color: #17a2b8; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none;">
+        View Verified Employees
+    </a>
+</div>
+
+{{ block.super }}
+
+<style>
+    #content {
+        padding: 20px;
+    }
+    
+    .module h2 {
+        background: #2c3e50;
+        color: white;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+    }
+    
+    .module table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .module td, .module th {
+        padding: 10px;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    .button:hover {
+        opacity: 0.9;
+    }
+</style>
+{% endblock %}
