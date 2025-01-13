@@ -84,7 +84,7 @@ curl -X POST http://localhost:8000/api/employees/ \
      -d '{
          "full_name": "Ndegwadavid",
          "email": "Ndegwadavid@github.com",
-         "phone_number": "079734238-",
+         "phone_number": "0797342380",
          "position": "Developer",
          "department": "IT"
      }'
