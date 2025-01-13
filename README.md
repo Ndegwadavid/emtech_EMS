@@ -55,12 +55,12 @@ python manage.py runserver
 - POST `/api/auth/token/refresh/` - Refresh JWT token
 
 ### Employees
-- GET `/api/employees/` - List all employees
-- POST `/api/employees/` - Create new employee
-- GET `/api/employees/{id}/` - Get employee details
+- GET `/api/api/employees/` - List all employees
+- POST `/api/api/employees/` - Create new employee
+- GET `/api/api/employees/{id}/` - Get employee details
 - PUT `/api/employees/{id}/` - Update employee
-- DELETE `/api/employees/{id}/` - Delete employee
-- POST `/api/employees/{id}/verify/` - Verify employee
+- DELETE `/api/api/employees/{id}/` - Delete employee
+- POST `/api/api/employees/{id}/verify/` - Verify employee
 
 ### Documentation
 - Swagger UI: `/swagger/`
