@@ -96,7 +96,7 @@ curl -X POST http://localhost:8000/api/employees/ \
 - Input Validation
 - Status-based Access Control
 - Activity Logging and monitoring
-- Rate Limiting <-- to be worked on further>
+- Rate Limiting <-- to be worked on abit more -->
 
 ## Requirements
 
