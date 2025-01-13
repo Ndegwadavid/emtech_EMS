@@ -100,10 +100,7 @@ curl -X POST http://localhost:8000/api/employees/ \
 
 ## Requirements
 
-- Python 3.8+
-- Django 4.0+
-- Django REST Framework
-- SQLite (default)
+- In file requirements.txt
 
 ## Directory Structure
 ```
