@@ -1,15 +1,15 @@
 # command to sign up
 curl -X POST http://127.0.0.1:8000/api/auth/signup/ \
      -H "Content-Type: application/json" \
-     -d '{"username":"admin1","password":"pass123","email":"admin1@example.com"}'
+     -d '{"username":"admintest","password":"pass1234","email":"admintest@example.com"}'
 
 # command to  signin
 curl -X POST http://127.0.0.1:8000/api/auth/signin/ \
      -H "Content-Type: application/json" \
-     -d '{"username":"admin1","password":"pass123"}'
+     -d '{"username":"admintest","password":"pass1234"}'
 
 # command to create Employee (requires JWT token)
-curl -X POST http://127.0.0.1:8000/api/employees/ \
+curl -X POST http://127.0.0.1:8000/api/api/employees/ \
      -H "Authorization: Bearer ":\
      -H "Content-Type: application/json" \
      -d '{
