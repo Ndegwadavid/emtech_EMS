@@ -8,3 +8,8 @@ Functionalities:
 - Status management
 - Database management.
 - Log Management
+
+
+the backend framework is built on django
+
+
