@@ -9,7 +9,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
         read_only_fields = ('created_by', 'created_at', 'updated_at')
 
     def validate_phone_number(self, value):
-        # Simple phone validation - can be enhanced based on requirements
+        # phne number validation
         if not re.match(r'^\+?1?\d{9,15}$', value):
             raise serializers.ValidationError(
                 "Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed."
@@ -23,9 +23,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
         return value
 
     def validate(self, data):
-        # Custom validation for the entire object
         if 'position' in data and 'department' in data:
-            # Example validation - ensure position matches department conventions
             if data['department'].lower() == 'it' and not any(
                 tech in data['position'].lower() 
                 for tech in ['developer', 'engineer', 'analyst', 'administrator']
