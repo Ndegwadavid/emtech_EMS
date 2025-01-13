@@ -2,6 +2,7 @@ from django.contrib import admin
 from django.utils.html import format_html
 from .models import Employee
 
+## employees admin code
 @admin.register(Employee)
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ('full_name', 'email', 'position', 'department', 'get_status', 'get_action_buttons')
@@ -46,7 +47,7 @@ class EmployeeAdmin(admin.ModelAdmin):
             '<span style="color: #28a745; font-weight: bold;">✓ Verified</span>'
         )
     get_action_buttons.short_description = 'Actions'
-
+# custom css fro admin
     class Media:
         css = {
             'all': ('admin/css/custom_admin.css',)

@@ -2,6 +2,7 @@
 from django.db import models
 from django.conf import settings
 
+# admin creating new employees code
 class Employee(models.Model):
     STATUS_CHOICES = (
         ('PENDING', 'Pending Verification'),
