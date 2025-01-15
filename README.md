@@ -2,7 +2,7 @@
 
 A secure employee management system built with Django and Django REST Framework. Manage employees, track their verification status, and handle administrative tasks efficiently.
 
-## Features
+## Features included
 
 - JWT Authentication for Admin
 - Employee Management (CRUD Operations)
